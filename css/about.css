@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'open_sans-regular';
+  src: url("../fonts/opensans-regular/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans-light';
+  src: url("../fonts/opensans-light/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans-lightitalic';
+  src: url("../fonts/opensans-lightitalic/opensans-lightitalic-webfont.eot");
+  src: url("../fonts/opensans-lightitalic/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-lightitalic/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/opensans-lightitalic/opensans-lightitalic-webfont.woff") format("woff"), url("../fonts/opensans-lightitalic/opensans-lightitalic-webfont.ttf") format("truetype"), url("../fonts/opensans-lightitalic/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'open_sans-semibold';
+  src: url("../fonts/opensans-semibold/opensans-semibold-webfont.eot");
+  src: url("../fonts/opensans-semibold/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-semibold/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold/opensans-semibold-webfont.woff") format("woff"), url("../fonts/opensans-semibold/opensans-semibold-webfont.ttf") format("truetype"), url("../fonts/opensans-semibold/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_condensed-regular';
+  src: url("../fonts/robotocondensed-regular/robotocondensed-regular-webfont.eot");
+  src: url("../fonts/robotocondensed-regular/robotocondensed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotocondensed-regular/robotocondensed-regular-webfont.woff2") format("woff2"), url("../fonts/robotocondensed-regular/robotocondensed-regular-webfont.woff") format("woff"), url("../fonts/robotocondensed-regular/robotocondensed-regular-webfont.ttf") format("truetype"), url("../fonts/robotocondensed-regular/robotocondensed-regular-webfont.svg#roboto_condensedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_condensed-light';
+  src: url("../fonts/robotocondensed-light/robotocondensed-light-webfont.eot");
+  src: url("../fonts/robotocondensed-light/robotocondensed-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotocondensed-light/robotocondensed-light-webfont.woff2") format("woff2"), url("../fonts/robotocondensed-light/robotocondensed-light-webfont.woff") format("woff"), url("../fonts/robotocondensed-light/robotocondensed-light-webfont.ttf") format("truetype"), url("../fonts/robotocondensed-light/robotocondensed-light-webfont.svg#roboto_condensedlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Yahoo reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+a, select {
+  text-decoration: none;
+  color: black;
+  border: none;
+  outline: none; }
+
+select:active,
+select:focus {
+  border: none;
+  outline: none; }
+
+body {
+  position: relative;
+  font-family: open_sans-regular, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0 auto; }
+  body .clear:after {
+    display: table;
+    content: "";
+    clear: both; }
+  body .wrapper {
+    width: 1173px;
+    margin: 0 auto;
+    max-width: 90%; }
+  body .inline {
+    display: inline-block;
+    vertical-align: top; }
+  body .header {
+    background: url("../img/background.png") no-repeat 50.1% 0.5%;
+    min-height: 263px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff; }
+    body .header .wrapper .head-logo .logo {
+      background: url("../img/logo.png") no-repeat left;
+      width: 220px;
+      height: 66px;
+      display: inline-block;
+      margin-top: 15px;
+      font-family: roboto_condensed-light;
+      font-size: 60px;
+      padding-left: 78px;
+      padding-top: 6px; }
+    body .header .wrapper .menu-toggle {
+      display: none; }
+    body .header .wrapper .nav {
+      margin-bottom: 20px; }
+      body .header .wrapper .nav ul li {
+        float: left;
+        font-family: open_sans-light;
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff;
+        padding: 36px 44px 21px 0;
+        margin-left: -1px;
+        letter-spacing: 0.06px; }
+        body .header .wrapper .nav ul li a {
+          color: #fff; }
+          body .header .wrapper .nav ul li a:hover {
+            color: #00b1ba; }
+  body .row__wrapper {
+    width: 1173px;
+    margin: 52px auto 0;
+    max-width: 90%;
+    border-bottom: 1px solid #fff; }
+    body .row__wrapper h1 {
+      font: 36px/72px roboto_condensed-light; }
+    body .row__wrapper img {
+      display: block;
+      margin-top: 16px;
+      float: left; }
+    body .row__wrapper p:first-child {
+      font: 14px/20px open_sans-regular;
+      margin-top: 17px;
+      display: none; }
+    body .row__wrapper p:last-child {
+      font: 14px/20px open_sans-light;
+      margin-top: 20px; }
+
+@media only screen and (max-width: 1310px) {
+  .achivments__item {
+    float: left;
+    width: 25.2%; } }
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    -webkit-background-size: 2200px 2200px;
+            background-size: 2200px;
+    background-position: 70% 0; }
+    .header .wrapper .tile {
+      text-align: center; }
+      .header .wrapper .tile .first .item, .header .wrapper .tile .second .item {
+        /*position: relative;*/
+        width: 155px;
+        height: 225px; }
+        .header .wrapper .tile .first .item .name, .header .wrapper .tile .second .item .name {
+          /*position: absolute;*/
+          margin-left: 15px;
+          margin-right: 15px;
+          line-height: 36px; }
+      .header .wrapper .tile .second {
+        margin-bottom: 50px; } }
+
+@media only screen and (max-width: 990px) {
+  .header .wrapper .tile .first .item, .header .wrapper .tile .second .item {
+    /*position: relative;*/
+    width: 125px; }
+    .header .wrapper .tile .first .item .name, .header .wrapper .tile .second .item .name {
+      /*position: absolute;*/
+      margin-left: 7px;
+      margin-right: 15px;
+      line-height: 36px; }
+  .header .wrapper .tile .second {
+    margin-bottom: 50px; }
+  .header .wrapper .inline .help {
+    max-width: 300px; } }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    -webkit-background-size: 5000px 5000px;
+            background-size: 5000px;
+    background-position: 45% 80%; }
+    .header .wrapper {
+      text-align: center;
+      width: 500px; }
+      .header .wrapper .head-logo {
+        margin-left: 40px; }
+        .header .wrapper .head-logo .logo {
+          padding-left: 40px; }
+      .header .wrapper .menu-toggle {
+        display: block;
+        margin: 30px 0 20px; }
+        .header .wrapper .menu-toggle select {
+          width: 420px;
+          height: 20px; }
+      .header .wrapper .nav {
+        display: none; }
+        .header .wrapper .nav ul li:last-child {
+          padding-right: 0; }
+          .header .wrapper .nav ul li:last-child a {
+            color: #fff; }
+            .header .wrapper .nav ul li:last-child a:hover {
+              color: #00b1ba; }
+      .header .wrapper .tile {
+        text-align: center; }
+        .header .wrapper .tile .first .item, .header .wrapper .tile .second .item {
+          display: block;
+          width: 420px;
+          height: 190px;
+          overflow: hidden;
+          margin-bottom: 15px; }
+          .header .wrapper .tile .first .item .bcg, .header .wrapper .tile .second .item .bcg {
+            margin-top: 35px; }
+          .header .wrapper .tile .first .item .name, .header .wrapper .tile .second .item .name {
+            /*position: absolute;*/
+            margin-left: 15px;
+            margin-right: 15px;
+            line-height: 36px;
+            font-size: 22px; }
+        .header .wrapper .tile .second {
+          margin-bottom: 50px; }
+      .header .wrapper .inline .sss {
+        text-align: left;
+        width: 420px;
+        margin: 0;
+        margin: -25px 0 25px; }
+      .header .wrapper .inline .help {
+        text-align: left;
+        width: 420px;
+        margin: 0;
+        margin-bottom: 50px; } }
+
+@media only screen and (max-width: 640px) {
+  /**/ }
+
+@media only screen and (max-width: 480px) {
+  .header .wrapper {
+    text-align: center; }
+    .header .wrapper .menu-toggle select {
+      width: 250px;
+      height: 20px; }
+    .header .wrapper .tile .first .item, .header .wrapper .tile .second .item {
+      display: block;
+      width: 250px;
+      height: 190px;
+      overflow: hidden;
+      margin-bottom: 15px; }
+    .header .wrapper .inline .sss {
+      display: block;
+      width: 250px;
+      margin-left: 20px; }
+    .header .wrapper .inline .help {
+      display: block;
+      width: 250px;
+      margin-left: 20px; } }
+
+@media only screen and (max-width: 320px) {
+  /**/ }

@@ -1,0 +1,1401 @@
+@import "fonts"
+@import "reset"
+
+$orange: #f1ad1d
+
+body 
+	font-family: open_sans-regular, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	background: url(../img/body_bg.png) 
+	background-position: 25px 18px
+
+.clear:after
+	display: table;
+	content: "";
+	clear: both;
+
+.wrapper
+	width: 1170px;
+	margin: 0 auto;
+	max-width: 90%;
+
+.inline
+	display: inline-block
+
+.center
+	text-align: center
+
+h2
+	font: 22px/18px montserratbold
+	text-transform: uppercase
+	text-align: center
+	letter-spacing: -0.25px
+
+	span
+		color: $orange
+
+.line
+	width: 60px
+	height: 3px
+	background: $orange
+	margin: 0 auto
+
+p
+	font: 17px/24px latoregular
+	text-align: center
+
+
+.header
+	background: url(../img/bg.jpg) no-repeat 
+	background-size: cover
+	background-position: center center;
+
+	&__wrapper
+
+	&__logo
+		padding-top: 385px
+		padding-left: 4px
+		letter-spacing: -0.8px
+		padding-bottom: 88px
+
+	&__txt-1
+		font: 48px montserratbold
+		color: #fff
+		text-transform: uppercase
+
+	&__txt-2
+		font: 18px latoregular
+		color: #fff
+		margin: 3px 0 0 3px
+		letter-spacing: 0.1px
+
+	&__txt-block-1
+		margin: 27px 0 0 -5px
+		width: 151px
+		height: 128px
+		font: 54px montserratbold
+		text-align: center
+		line-height: 140px
+		text-transform: uppercase
+		color: #f48e0b
+		background: #fff
+		border-radius: 4px 0 0 4px
+		border: 1px solid white
+
+
+	&__txt-block-2
+		width: 657px
+		height: 128px
+		font: 54px montserratbold
+		line-height: 140px
+		text-transform: uppercase
+		color: #fff
+		background: rgba(0, 0, 0, 0.3)
+		padding-left: 22px
+		margin-left: -3px
+		border: 1px solid white
+		border-radius:  0 4px 4px 0 
+		margin-top: 10px
+
+@media only screen and (max-width : 950px)
+
+	.header
+		width: 100%
+
+		&__txt-block-1
+			width: 101px
+			height: 78px
+			font-size: 36px
+			line-height: 85px
+
+		&__txt-block-2
+			width: 430px
+			height: 78px
+			font-size: 36px
+			line-height: 85px
+
+@media only screen and (max-width : 650px)
+
+	.header
+
+		&__txt-block-1
+			width: 75px
+			height: 60px
+			font-size: 18px
+			line-height: 67px
+
+		&__txt-block-2
+			width: 315px
+			height: 60px
+			font-size: 18px
+			line-height: 67px
+
+@media only screen and (max-width : 500px)
+
+	.header
+
+		&__txt-block-1
+			width: 51px
+			height: 39px
+			font-size: 18px
+			line-height: 45px
+
+		&__txt-block-2
+			width: 215px
+			height: 39px
+			font-size: 18px
+			line-height: 45px
+
+@media all and (max-height : 550px) 
+
+	/*.header
+		&__logo
+			padding-top: 210px*/
+
+
+.menu
+	background: #fff
+	border-bottom: 2px solid $orange
+	min-height: 43px
+	display: flex
+
+	&__wrapper
+
+	&__common
+		display: flex
+		justify-content: space-between
+		background: #fff
+		transition: all 0.5s ease
+
+		img
+			margin: 16px 20px 10px 0px
+
+	&__toggle
+		display: none
+		font: 18px/14px latoregular
+		text-align: center
+		width: 130px
+		height: 36px
+		margin: 8px 0
+		padding-top: 12px
+		box-sizing: border-box
+		background: $orange
+		color: #fff
+		cursor: pointer
+		transition: all 0.5s ease
+		border-radius: 3px
+
+		&:hover
+			background: #333333
+			color: $orange
+
+	&__nav
+		
+		ul
+			display: flex
+			flex-wrap: wrap
+			font: 14px/18px latoregular
+			text-transform: uppercase
+
+			li
+
+			a 
+				padding: 18px
+				cursor: pointer
+				display: block
+
+				&:hover
+					color: $orange
+					transition: all 0.2s linear
+
+	.stickytop
+		position: fixed
+		top: 0
+		left: 0
+		width: 90%
+		padding: 0 5%
+		justify-content: space-between
+		border-bottom: 2px solid $orange
+		z-index: 1
+		
+@media only screen and (max-width : 900px)
+
+	.menu
+
+		&__toggle
+
+		&__nav
+
+			ul
+
+				a 
+					padding: 18px 7px
+
+
+@media only screen and (max-width : 750px)
+
+	.menu
+
+		&__common
+			position: relative
+			width: 100%
+			display: block
+
+		&__toggle
+			display: block
+			float: right
+
+		&__nav
+			display: block
+			position: absolute
+			right: 0px
+			top: 60px
+			background: #fff 
+			width: 90%
+			padding: 0 5%
+
+			ul
+				display: none
+				border: 1px solid $orange
+
+				li
+
+					a 
+						padding: 8px 7px
+
+					&:hover
+						background: #333333
+						color: $orange
+
+
+.block-1
+
+	&__wrapper
+		padding: 108px 0 30px 0 
+
+	&__header
+		font: 22px/24px montserratbold
+		text-transform: uppercase
+		letter-spacing: -0.6px
+
+	&__txt
+		font: 17px/24px latoregular
+		padding: 27px 0 49px 0
+
+	img
+		margin: 35px 0 106px 0
+
+@media only screen and (max-width : 584px)
+
+	.block-1
+
+		&__header
+			line-height: 30px	
+
+
+.block-2
+	margin: 28px 0 30px -16px
+
+	&__wrapper
+		
+		h2
+			font: 22px/24px montserratbold
+			text-transform: uppercase
+			letter-spacing: -0.6px
+
+		p 
+			font: 17px/24px latoregular
+			padding: 27px 0 49px 0
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		padding: 57px 0 0px
+
+	&__images
+		display: flex
+		flex-wrap: wrap
+		max-width: 570px
+		min-height: 320px
+		margin: 0 auto
+		margin-bottom: 40px
+
+	&__item
+		position: relative
+		cursor: pointer
+		transition: all 1s ease 0s
+
+		img
+			transition: all 1s ease 0s
+
+		div 
+			position: absolute
+			width: 120px
+			height: 15px
+			background: #333333
+			font: 14px/12px latoregular
+			color: #fff
+			text-align: center
+			padding: 12px 0
+			bottom: 10px
+			left: 15px
+			transition: all 0.5s ease 0s;
+
+		&:hover 
+
+			img
+				opacity: 0.9
+				filter: saturate(2)
+
+			div
+				color: $orange
+				transform: translateX(20px)
+
+	&__item:first-child, &__item:nth-child(3)
+		margin-right: 29px
+
+	&__item:first-child, &__item:nth-child(2)
+		margin-bottom: 18px
+
+	&__content
+		max-width: 570px
+		margin: 0 auto
+
+		h2
+			font: 18px/18px montserratbold
+			text-align: left
+			padding-left: 12px 
+
+
+			span
+				color: $orange
+
+		p 
+			font: 14px/22px latolight
+			padding: 18px 0 0 14px
+			text-align: left
+
+
+		p:nth-child(3)
+			padding-top: 22px
+			margin-bottom: 50px
+
+		a 
+			font: 14px/12px latobold
+			width: 175px
+			height: 100px
+			padding: 18px 27px
+			background: $orange
+			margin-left: 14px
+			color: #fff
+			transition: all 0.5s ease
+
+			&:hover
+				background: #000
+				color: $orange
+
+@media only screen and (max-width : 635px)
+
+	.block-2
+
+		h2
+			line-height: 30px
+
+		&__images
+			max-width: 270px
+
+		&__item
+			margin-bottom: 20px	
+
+		&__content
+			max-width: 90%
+
+
+.block-3
+	background: url('../img/bg1.jpg') no-repeat 0 0 fixed 
+	background-size: cover
+	background-position: center center;
+	height: 380px
+	margin-top: 142px
+
+	h2
+		font: 22px/18px montserratbold
+		color: white
+		text-transform: uppercase
+		text-align: center
+		padding: 150px 10px 55px 0
+		letter-spacing: -0.35px
+
+		span
+			color: $orange	
+
+@media only screen and (max-width : 450px)
+
+	.block-3
+
+		h2
+			line-height: 30px
+
+
+.block-4
+	margin: 114px 0 50px
+
+	h2
+		font: 22px/18px montserratbold
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: -0.4px
+
+	p
+		font: 17px/24px latoregular
+		text-align: center
+		margin: 30px 0 50px 0
+
+	&__images
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		position: relative
+		max-width: 1170px
+		margin: 50px auto 0
+		margin-left: -3px
+
+
+
+	&__item
+		position: relative
+		margin-left: 2px
+		transition: all 0.5s ease
+		cursor: pointer
+
+		img
+			transition: all 0.5s ease
+
+		div
+			position: absolute
+			width: 130px
+			background: #333333
+			font: 14px/12px latoregular
+			color: #fff
+			text-align: center
+			padding: 15px 12px
+			bottom: 17px
+			left: 15px
+			transition: all 0.2s ease 0s;
+		
+		span
+			color: $orange
+
+		&:hover 
+
+			img
+				opacity: 0.9
+				filter: saturate(0.2)
+
+@media only screen and (max-width : 537px)
+	
+	.block-4
+
+		h2
+			line-height: 30px
+
+
+.block-5
+	margin: 205px 0 165px
+
+	h2
+		font: 22px/18px montserratbold
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: -0.4px
+
+	p
+		font: 17px/24px latoregular
+		text-align: center
+		margin: 30px 0 45px 0
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-top: 50px
+
+	&__item
+		width: 270px
+		margin: 0 15px 30px
+		padding-bottom: 32px
+		border-bottom: 3px solid #333333
+		text-align: center
+
+		h3
+			font: 18px/ 18px montserratbold
+			text-align: center
+			height: 55px
+			background: #333333
+			color: #fff
+			padding: 20px
+			box-sizing: border-box
+
+			span
+				color: $orange	
+
+		i 
+			margin: 30px 105px 0px 
+			font-size: 54px
+			color: #333333
+
+		p 
+			font: 14px/20px latolight
+			margin: 0
+
+		p.content
+			font: 14px/16px latolight
+			margin-top: 20px
+
+		p.offer
+			font: 18px/20px latoregular
+			margin-bottom: 10px
+
+		div
+			margin: 25px auto
+			width: 60px
+			height: 3px
+			background: $orange	
+
+
+	&__item:last-child
+		margin-right: 0
+
+	&__item:first-child
+		margin-left: 0
+
+@media only screen and (max-width : 1320px)
+	
+	.block-5
+
+		&__item
+			width: 200px
+
+		i 
+			margin: 30px 70px 0px 
+
+@media only screen and (max-width : 1010px)
+	
+	.block-5
+
+		&__item
+			width: 80%
+
+		i 
+			text-align: center
+
+@media only screen and (max-width : 700px)
+
+	.block-5
+
+		margin: 20px 0
+
+@media only screen and (max-width : 445px)
+
+	.block-5
+
+		h2
+			line-height: 30px
+
+
+.block-6
+	background: url('../img/bg2.jpg') no-repeat center center fixed 
+	background-size: cover
+	height: 474px
+
+
+	h2
+		font: 22px/18px montserratbold
+		color: white
+		text-transform: uppercase
+		text-align: center
+		padding: 173px 0 60px 0
+		letter-spacing: -0.25px
+
+		span
+			color: $orange
+
+	img
+		margin: 12px
+
+
+	&__images
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		max-width: 900px
+		margin: 45px auto
+
+@media only screen and (max-width : 870px)
+
+	.block-6
+		
+		img:last-child
+			margin-left: 42px
+
+@media only screen and (max-width : 500px)
+
+	.block-6
+
+		h2
+			line-height: 30px
+
+		img
+			width: 100px
+			height: 40px
+
+		img:last-child
+			margin-left: 0px
+
+
+.block-7
+	margin: 150px 0 50px 0
+
+	&__wrapper
+		width: 1180px
+
+	p 
+		margin: 30px 0 50px 0
+
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin: 50px 0 30px
+
+		li 
+			font: 14px/18px latoregular
+			padding: 10px 37px
+			margin: 9px
+			max-width: 830px
+			border: 1px solid #333333
+			cursor: pointer
+			transition: all 0.5s ease
+
+			&:hover
+				background: #000
+				color: $orange
+
+
+	&__portfolio
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		max-width: 1180px
+
+		
+	&__item
+		position: relative
+		cursor: pointer
+		margin: 7px 7px 4px 7px
+
+
+		&:hover img
+			opacity: 0
+
+		&:hover div.block-7__content
+			opacity: 1
+
+		&:hover div.block-7__title
+			transform: translateY(0px)
+			opacity: 1
+
+		&:hover div.block-7__btn
+			opacity: 1
+			transform: translateY(0px)
+
+		img
+			transition: all 0.5s ease
+			opacity: 1
+
+	&__content
+		position: absolute
+		width: 275px
+		height: 265px
+		border: 3px solid #000
+		overflow: hidden
+		top: 0 
+		left: 0
+		opacity: 0
+
+	&__title
+		font: 17px/24px latoregular
+		text-align: center
+		margin: 43px 0 20px 0
+		transform: translateY(-60px);
+		transition: all 0.2s ease-in-out;
+		opacity: 0
+
+
+	&__info
+		font: 14px/16px latolight
+		margin: 30px 20px 27px 20px
+		text-align: center
+		letter-spacing: -0.1px
+
+
+	&__btn
+		font: 14px/18px latobold
+		padding: 10px 1px
+		background: $orange
+		color: #fff
+		width: 140px
+		text-align: center
+		margin: 0 auto
+		transition: transform 0.5s ease 0.3s, opacity 1s ease 0.3s
+		transform: translateY(60px)
+		opacity: 0
+
+		&:hover
+			background: #000
+			color: $orange
+
+@media only screen and (max-width : 700px)
+
+	.block-7
+
+		margin: 70px 0
+
+.block-8
+	margin: 158px 0  10px 0
+
+	&__wrapper
+		width: 1170px;
+
+		h2
+			letter-spacing: -0.5px
+
+		p 
+			margin: 30px 0 45px 0
+
+	&__logo
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-top: 60px
+
+@media only screen and (max-width : 700px)
+
+	.block-8
+
+		margin: 70px 0
+
+.block-9
+	margin: 110px 0 0px 0
+
+	&__wrapper
+
+		h2
+			letter-spacing: -0.5px
+
+		p 
+			margin: 30px 0 45px 0
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin: 62px 0 30px 0
+
+	&__item
+		max-width: 370px
+
+	&__top
+		display: flex
+		align-items: center
+
+		i 	
+			font-size: 50px
+
+		div
+			height: 3px
+			width: 305px
+			background: $orange
+			margin-top: 13px
+			margin-left: 20px
+
+	&__middle
+
+		p
+			font: 14px/20px latolight
+			margin: 8px 0 0px 0px
+			text-align: justify;
+
+	&__bottom
+		display: flex
+		align-items: flex-end
+		margin: 25px 0 0 0
+		border-top: 3px solid #000
+		padding: 14px 0 0  0
+
+		p.name 
+			font: 14px/10px latoregular
+			width: 150px
+			margin: 0 0 0 10px
+			text-align: left
+
+			span
+				font: 14px/20px latolight
+
+@media only screen and (max-width : 1310px)
+
+	.block-9
+
+		&__item
+			max-width: 300px
+
+@media only screen and (max-width : 1080px)
+
+	.block-9
+
+		&__container
+			justify-content: center
+
+		&__item
+			max-width: 60%
+			margin-bottom: 50px
+
+		&__top
+			div
+				width: 100%
+
+@media only screen and (max-width : 700px)
+
+	.block-9
+
+		margin: 70px 0
+
+
+.block-10
+	background: url('../img/bg3.jpg') no-repeat center center fixed 
+	background-size: cover
+	height: 485px
+	margin-top: 142px
+
+	h2
+		font: 22px/32px montserratbold
+		color: white
+		text-transform: uppercase
+		text-align: center
+		padding: 130px 0 60px 0
+		letter-spacing: -0.5px
+
+		span
+			color: $orange	
+
+	p 
+		font: 18px/30px latoregular
+		max-width: 580px
+		margin: 52px auto 40px
+		letter-spacing: 0.6px
+		color: #fff
+
+
+		span
+			color: $orange
+
+	&__long-line
+		width: 285px
+		background: #fff
+
+@media only screen and (max-width : 700px)
+
+	.block-10
+
+		margin: 70px 0
+
+		p 
+			font-size: 14px
+
+		&__long-line
+			width: 285px
+			background: #fff
+			
+.block-11
+	margin: 153px 0 50px 
+
+	div.wrapper
+		width: 1200px
+
+	h2
+		letter-spacing: -0.5px
+		margin-bottom: 30px
+
+	&__line
+		margin: 50px auto 35px
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: stretch
+		max-width: 1200px
+
+		
+	&__item
+		width: 370px
+		height: auto
+		margin: 15px
+
+		.title
+			height: 50px
+
+		.quote
+			max-width: 370px
+			min-height: 157px
+			font: 26px/30px open_sans-lightitalic
+			padding: 24px 18px
+			color: #666666
+			box-sizing: border-box
+			background: #dbdbdb url(../img/quote_bg.png) no-repeat right bottom 
+
+			div
+				font: 12px/12px open_sans-regular
+				padding-top: 15px
+
+		i
+			font-size: 14px;
+			padding: 9px 12px
+			background: #000
+			color: $orange
+			margin-top: 8px
+
+		a 
+			font: 18px/22px montserratbold
+			margin: 0px 5px
+			letter-spacing: -0.5px
+
+		p 
+			font: 14px/17px latolight
+			text-align: left
+			padding-bottom: 16px
+			border-bottom: 1px solid #c1c1c1
+
+		.date
+			display: flex
+			justify-content: space-between
+			padding: 12px 0
+			border-bottom: 3px solid #333333
+
+			span
+				font: 12px/12px latolight
+
+			a 
+				font: 12px/12px latolight
+
+
+	.one
+		display: block
+		margin: 58px auto
+		font-size: 14px
+		padding: 16px 50px
+		color: white
+		background-color: $orange
+		width: 130px
+		transition: all 0.5s ease
+		text-align: center
+
+		&:hover
+			background: #333333
+			color: $orange
+
+@media only screen and (max-width : 700px)
+
+	.block-11
+
+		margin: 70px 0
+
+
+@media only screen and (max-width : 400px)
+
+	.block-11
+
+		&__item
+
+			img
+
+				width: 100%
+
+			.title
+				height: 60px
+
+				a
+					font-size: 12px
+
+			object
+				width: 100%
+				height: auto
+
+
+
+
+.block-12
+	background: url('../img/bg4.jpg') no-repeat 0 0 fixed 
+	background-size: cover
+	background-position: center center;
+	height: 380px
+	margin-top: 155px
+
+	h2
+		font: 21px/32px montserratbold
+		color: white
+		text-transform: uppercase
+		text-align: center
+		padding: 87px 0 50px 0
+		letter-spacing: 0.15px
+
+		span
+			color: $orange
+
+	a 
+		display: block
+		margin: 66px auto
+		font-size: 14px
+		padding: 16px 25px
+		color: white
+		width: 130px
+		transition: all 0.5s ease
+		text-align: center
+		border: 1px solid #fff
+		text-transform: uppercase
+
+		&:hover
+			background: #fff
+			color: #000	
+
+@media only screen and (max-width : 700px)
+
+	.block-12
+
+		margin: 70px 0
+
+.block-13
+	margin: 153px 0 50px 
+
+	div.wrapper
+		width: 1200px
+
+	h2
+		letter-spacing: -0.5px
+		margin-bottom: 28px
+
+	&__line
+		margin: 50px auto 58px
+
+	&__subscribe
+		display: flex
+		justify-content: center
+
+
+		input[type="text"]
+			height: 66px
+			width: 600px
+			box-sizing: border-box
+			padding: 6px 28px 0
+			font: 18px/10px latoitalic
+
+
+		input[type="submit"]
+			height: 66px
+			width: 169px
+			vertical-align: top
+			font: 18px/18px latobold
+			color: #fff 
+			background: $orange
+			border: none
+			cursor: pointer
+			transition: all 0.5s linear
+			flex-shrink: 0
+
+			&:hover
+				color: $orange
+				background: #333333
+
+@media only screen and (max-width : 700px)
+
+	.block-13
+
+		margin: 70px 0
+
+@media only screen and (max-width : 500px)
+
+	.block-13
+
+		h2
+			line-height: 30px
+
+		&__subscribe
+			flex-direction: column
+			align-items: center
+
+			input[type="text"]
+				height: 46px
+				width: 100%
+				box-sizing: border-box
+				padding: 6px 28px 0
+				font: 18px/10px latoitalic
+
+
+			input[type="submit"]
+				height: 46px
+				width: 169px
+				margin-top: 20px
+
+
+.block-14
+	margin: 176px 0 50px 
+
+	&__wrapper
+		width: 1200px
+
+	h2
+		letter-spacing: -0.5px
+		margin-bottom: 28px
+
+		span
+			color: $orange
+
+	&__line
+		margin: 50px auto 58px
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 12px 0 
+		max-width: 1137px
+
+	&__left-col
+		margin: 0 13px
+		width: 572px
+
+
+		h2
+			font-size: 18px
+			text-align: left
+			margin: 0 0 31px 0
+
+			span
+				color: $orange
+
+		p 
+			font-size: 14px
+			text-align: left
+
+	&__form
+		margin: 21px 0
+
+	&__form-top
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+		input[type="text"]
+			flex-basis: 47.5%
+			height: 46px
+			font: 14px/12px latolight_italic
+			box-sizing: border-box
+			padding-left: 12px
+			border: 1px solid #929292
+			background: #fff
+
+	textarea
+		width: 100%
+		margin: 20px 0
+		height: 184px
+		font: 14px/12px latolight_italic
+		box-sizing: border-box
+		padding: 18px 13px
+
+		&:focus
+			border: none
+
+	input[type="submit"]
+		width: 120px
+		height: 45px
+		margin-right: 20px
+		background: $orange
+		color: #fff 
+		font: 14px/12px latoblack
+		border: none
+		cursor: pointer
+		text-transform: uppercase
+		transition: all 0.2s linear
+
+		&:hover
+			background: #333333
+			color: #fff 
+
+
+	&__right-col
+		margin: 0 13px
+		max-width: 310px
+		flex-basis: 100%
+		
+		h2
+			font-size: 18px
+			text-align: left
+			margin: 0 0 31px 0px
+
+			span
+				color: $orange
+
+		p 
+			font-size: 14px
+			text-align: left
+			margin-bottom: 22px
+
+	&__contact-item
+		margin: 9px 0
+
+		i 
+			width: 36px
+			height: 32px
+			background: #000
+			color: $orange
+			text-align: center
+			box-sizing: border-box
+			padding-top: 10px
+
+		span
+			margin-left: 10px
+			display: inline-block
+			max-width: 60%
+			vertical-align: top
+
+	&__contact-item:nth-child(6)
+		margin-bottom: 60px
+
+	&__soc
+
+		i 
+			width: 43px
+			height: 40px
+			background: $orange
+			color: #fff 
+			font-size: 20px
+			padding: 10px 0
+			text-align: center
+			box-sizing: border-box
+			transition: all 0.2s linear
+			margin: 14px 15px 0 0
+
+			&:hover
+				background: #333333
+				color: #fff 
+
+@media only screen and (max-width : 1054px)
+
+	.block-14
+
+		&__left-col
+			margin: 0 auto
+
+		&__right-col
+			margin: 0 auto
+			padding-right: 260px
+
+@media only screen and (max-width : 700px)
+
+	.block-14
+
+		margin: 70px 0
+
+@media only screen and (max-width : 560px)
+
+	.block-14
+
+		&__right-col
+			margin: 0 0
+			padding-right: 0
+
+@media only screen and (max-width : 500px)
+
+	.block-14
+
+		&__form-top
+
+			input[type="text"]
+				flex-basis: 100%
+				margin-bottom: 20px
+
+		&__form
+
+			input[type="submit"]
+				width: 80px
+				height: 35px
+
+
+		&__contact-item
+			margin: 9px 0
+
+			i 
+				width: 36px
+				height: 32px
+				background: #000
+				color: $orange
+				text-align: center
+				box-sizing: border-box
+				padding-top: 10px
+				display: inline-block
+
+
+.footer
+	min-height: 280px
+	background: #333333
+	padding: 70px 30px
+
+	&__wrapper
+		text-align: center
+
+		p 
+			color: white;
+			max-width: 615px
+			margin: 45px auto
+			font-size: 12px
+
+	&__soc
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+	&__item
+		width: 120px
+		height: 46px
+		border: 1px solid #fff
+		text-align: center
+		padding-top: 14px
+		box-sizing: border-box
+		color: #fff
+		margin: 10px 10px
+
+		&:hover
+			color: $orange
+			background: #fff
+
+		i 
+			font-size: 16px
+
+		span
+			font-size: 13px
+
+@media only screen and (max-width : 560px)
+
+	.footer
+
+		&__wrapper
+
+			p 
+				text-align: justify
+
+
+
+
+
+
